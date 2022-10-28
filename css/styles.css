@@ -116,11 +116,87 @@ body {
   justify-content: center;
 }
 
+#recentWorkSeparator {
+  background-color: #36b37f;
+  border-radius: 5px;
+  width: 48px;
+  height: 4px;
+  margin: 25px auto 30px;
+  border: none;  
+}
+
 .workCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  max-width: 340px;
   border-radius: 8px;
+  max-width: 340px;
+  height: 474px;  
+}
+
+.workCardInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border-radius: 8px;
+  height: 222px;
+  padding: 0 16px 0;
+}
+
+.workCardInfoTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+  margin: 0 ;
+}
+
+.langBadgesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.langBadges {
+  /*flex: 1 2 auto;*/
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  margin: 0;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btnSeeProject {
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: white;
+  width: 122px;
+  height: 48px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0 0 0;
 }
