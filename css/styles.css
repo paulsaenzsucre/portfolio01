@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 #toolbar {
@@ -17,23 +17,23 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #172B4D;
-  margin: 0px 0px 0px 12px;
+  color: #172b4d;
+  margin: 0 0 0 12px;
   padding: 10px 12px;
 }
 
 #logoPlaceHolder:hover {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 #hamburgerButton {
   display: inline;
-  margin: 6px 35px 0px 3px;
+  margin: 6px 35px 0 3px;
 }
 
-#hamburgerButton:hover{
+#hamburgerButton:hover {
   transform: scale(1.2);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #mainContainer {
@@ -52,12 +52,12 @@ body {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
-  margin: 62px 24px 0px 24px;
+  color: #172b4d;
+  margin: 62px 24px 0 24px;
 }
 
 #subheadline {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 #supportingLine {
@@ -67,8 +67,8 @@ body {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #172B4D;
-  margin: 0px 24px 0px 24px;
+  color: #172b4d;
+  margin: 0 24px 0 24px;
 }
 
 .social-media-icons-container {
@@ -80,11 +80,11 @@ body {
   margin: 10px 24px 58px 24px;
 }
 
-.social-media-icons{
-  margin: 0px;
+.social-media-icons {
+  margin: 0;
 }
 
 .social-media-icons:hover {
   transform: scale(1.2);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
