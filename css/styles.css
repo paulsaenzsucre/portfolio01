@@ -22,6 +22,10 @@ body {
   padding: 10px 12px;
 }
 
+#logoPlaceHolder:hover {
+  color: #36B37E;
+}
+
 #hamburgerButton {
   display: inline;
   margin: 6px 35px 0px 3px;
@@ -32,18 +36,55 @@ body {
   transition: transform .2s;
 }
 
-#logoPlaceHolder {
-  display: inline;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  color: #172B4D;
-  margin: 0px 0px 0px 12px;
-  padding: 10px 12px;
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+  background-image: url(../images/header-illsutration-mobile.svg);
+  background-repeat: no-repeat;
 }
 
-#logoPlaceHolder:hover {
+#headline {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+  margin: 62px 24px 0px 24px;
+}
+
+#subheadline {
   color: #36B37E;
+}
+
+#supportingLine {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172B4D;
+  margin: 0px 24px 0px 24px;
+}
+
+.social-media-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 24px 58px 24px;
+}
+
+.social-media-icons{
+  margin: 0px;
+}
+
+.social-media-icons:hover {
+  transform: scale(1.2);
+  transition: transform .2s;
 }
