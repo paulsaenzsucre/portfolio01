@@ -2,3 +2,48 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+#toolbar {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logoPlaceHolder {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172B4D;
+  margin: 0px 0px 0px 12px;
+  padding: 10px 12px;
+}
+
+#hamburgerButton {
+  display: inline;
+  margin: 6px 35px 0px 3px;
+}
+
+#hamburgerButton:hover{
+  transform: scale(1.2);
+  transition: transform .2s;
+}
+
+#logoPlaceHolder {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172B4D;
+  margin: 0px 0px 0px 12px;
+  padding: 10px 12px;
+}
+
+#logoPlaceHolder:hover {
+  color: #36B37E;
+}
