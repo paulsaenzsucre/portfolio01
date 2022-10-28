@@ -75,7 +75,7 @@ body {
   color: #36b37e;
 }
 
-#supportingLine {
+.supportingLine {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -135,7 +135,7 @@ body {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   max-width: 340px;
-  height: 474px;  
+  height: 474px;
 }
 
 .workCardInfoContainer {
@@ -199,4 +199,24 @@ body {
   font-weight: 500;
   font-size: 17px;
   margin: 0 0 0;
+}
+
+#aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.langFrameAndSkillCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  width: 340px;
+  height: 352px;
 }
