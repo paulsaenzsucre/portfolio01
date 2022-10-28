@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-header {
+#pageHeader {
   margin: 10px 0 0;
   text-align: center;
 }
@@ -59,7 +59,7 @@ header {
   background-position: center;
 }
 
-#headline {
+.headline {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -106,4 +106,21 @@ header {
 .social-media-icons:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
+}
+
+#myRecentWorksContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7,auto);
+  row-gap: 24px;
+  justify-content: center;
+}
+
+.workCard {
+  margin: 0;
+  padding: 0;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  max-width: 340px;
+  border-radius: 8px;
 }
