@@ -1,9 +1,55 @@
+/* Defining global CSS variables */
+:root {
+  --saturated-primary-color: #36b37e;
+  --lighter-primary-color: #c5e9da;
+  --lightest-primary-color: #ebf0ee;
+  --secondary-color: #172b4d;
+  --constrast-color: white;
+  --border-color: #d0d9d4;
+  --button-pressed-color: #008552;
+  --button-enabled-color: #36b37f;
+  --button-hover-color: #36b37f;
+  --button-hover-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  --lang-frame-skill-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  --normal-radius: 4px;
+  --bigger-radius: 8px;
+}
+
+.button {
+  background-color: var(--button-enabled-color);
+  border-radius: var(--normal-radius);
+  color: var(--constrast-color);
+  height: 48px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0 0 0;
+  padding: 12px;
+}
+
+.button:enabled {
+  background-color: var(--button-enabled-color);
+}
+
+.button:focus {
+  background-color: var(--button-pressed-color);
+}
+
+.button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: var(--button-hover-shadow);
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-header {
+#pageHeader {
   margin: 10px 0 0;
   text-align: center;
 }
@@ -27,13 +73,13 @@ header {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 0 0 0 12px;
   padding: 10px 12px;
 }
 
 #logoPlaceHolder:hover {
-  color: #36b37e;
+  color: var(--saturated-primary-color);
 }
 
 #hamburgerButton {
@@ -59,32 +105,32 @@ header {
   background-position: center;
 }
 
-#headline {
+.headline {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 48px 24px 0 24px;
   max-width: 290px;
 }
 
 #subheadline {
-  color: #36b37e;
+  color: var(--saturated-primary-color);
 }
 
-#supportingLine {
+.supportingLine {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 32px;
   text-align: center;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 0;
-  padding: 0 24px;
+  padding: 0 24px 0;
   max-width: 370px;
 }
 
@@ -106,4 +152,174 @@ header {
 .social-media-icons:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
+}
+
+#myRecentWorksContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, auto);
+  row-gap: 24px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#recentWorkSeparator {
+  background-color: var(--button-enabled-color);
+  border-radius: 5px;
+  width: 48px;
+  height: 4px;
+  margin: 25px auto 30px;
+  border: none;
+}
+
+.workCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  background-color: var(--lightest-primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  max-width: 340px;
+  height: 474px;
+}
+
+.workCardInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--constrast-color);
+  border-radius: 8px;
+  height: 222px;
+  padding: 0 16px 0;
+}
+
+.workCardInfoTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+  margin: 0;
+}
+
+.langBadgesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.langBadges {
+  background-color: var(--lightest-primary-color);
+  border-radius: 4px;
+  margin: 0;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+#aboutMeHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url(../images/illustration_1_about_me_mobile.svg), url(../images/illustration_2_about_me_mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 119px 107px, 127px 57px;
+  background-position: top 0 right -20px, bottom 0 left -30px;
+  margin-bottom: 35px;
+}
+
+.langFrameAndSkillCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--lightest-primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: 340px;
+  height: 352px;
+}
+
+.langFrameAndSkillsIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--constrast-color);
+  margin: 0 0 20px;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: var(--lang-frame-skill-shadow);
+}
+
+.langFrameAndSkillsIcon {
+  width: 48px;
+}
+
+.langFrameAndToolsBadgesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.langFrameAndToolsBadges {
+  background-color: var(--constrast-color);
+  border-radius: 8px;
+  margin: 0;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--saturated-primary-color);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.langFrameAndSkillsTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 0;
 }
