@@ -1,3 +1,49 @@
+/* Defining global CSS variables */
+:root {
+  --saturated-primary-color: #36b37e;
+  --lighter-primary-color: #c5e9da;
+  --lightest-primary-color: #ebf0ee;
+  --secondary-color: #172b4d;
+  --constrast-color: white;
+  --border-color: #d0d9d4;
+  --button-pressed-color: #008552;
+  --button-enabled-color: #36b37f;
+  --button-hover-color: #36b37f;
+  --button-hover-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  --lang-frame-skill-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  --normal-radius: 4px;
+  --bigger-radius: 8px;
+}
+
+.button {
+  background-color: var(--button-enabled-color);
+  border-radius: var(--normal-radius);
+  color: var(--constrast-color);
+  height: 48px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0 0 0;
+  padding: 12px;
+}
+
+.button:enabled {
+  background-color: var(--button-enabled-color);
+}
+
+.button:focus {
+  background-color: var(--button-pressed-color);
+}
+
+.button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: var(--button-hover-shadow);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,13 +73,13 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 0 0 0 12px;
   padding: 10px 12px;
 }
 
 #logoPlaceHolder:hover {
-  color: #36b37e;
+  color: var(--saturated-primary-color);
 }
 
 #hamburgerButton {
@@ -66,13 +112,13 @@ body {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 48px 24px 0 24px;
   max-width: 290px;
 }
 
 #subheadline {
-  color: #36b37e;
+  color: var(--saturated-primary-color);
 }
 
 .supportingLine {
@@ -80,11 +126,11 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 32px;
   text-align: center;
-  color: #172b4d;
+  color: var(--secondary-color);
   margin: 0;
-  padding: 0 24px;
+  padding: 0 24px 0;
   max-width: 370px;
 }
 
@@ -114,10 +160,11 @@ body {
   grid-template-rows: repeat(7, auto);
   row-gap: 24px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #recentWorkSeparator {
-  background-color: #36b37f;
+  background-color: var(--button-enabled-color);
   border-radius: 5px;
   width: 48px;
   height: 4px;
@@ -131,8 +178,8 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  background-color: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  background-color: var(--lightest-primary-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   max-width: 340px;
   height: 474px;
@@ -144,7 +191,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background-color: white;
+  background-color: var(--constrast-color);
   border-radius: 8px;
   height: 222px;
   padding: 0 16px 0;
@@ -172,7 +219,7 @@ body {
 }
 
 .langBadges {
-  background-color: #ebf0ee;
+  background-color: var(--lightest-primary-color);
   border-radius: 4px;
   margin: 0;
   padding: 8px 12px;
@@ -186,30 +233,12 @@ body {
   white-space: nowrap;
 }
 
-.btnSeeProject {
-  background-color: #36b37f;
-  border-radius: 4px;
-  color: white;
-  width: 122px;
-  height: 48px;
-  border: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  margin: 0 0 0;
-}
-
 #aboutMeContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 25px;
-  background-image: url(../images/illustration_1_about_me_mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 119px 107px;
-  background-position: top 0 right -20px;
   margin-bottom: 20px;
 }
 
@@ -218,25 +247,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  background-image: url(../images/illustration_2_about_me_mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 127px 57px;
-  background-position: bottom 23px left -30px;
-}
-
-.btnGetMyResume {
-  background-color: #36b37f;
-  border-radius: 4px;
-  color: white;
-  width: 159px;
-  height: 48px;
-  border: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  margin: 0 0 25px;
+  gap: 20px;
+  background-image: url(../images/illustration_1_about_me_mobile.svg), url(../images/illustration_2_about_me_mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 119px 107px, 127px 57px;
+  background-position: top 0 right -20px, bottom 0 left -30px;
+  margin-bottom: 35px;
 }
 
 .langFrameAndSkillCard {
@@ -247,8 +263,8 @@ body {
   gap: 30px;
   margin: 0;
   padding: 0;
-  background-color: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  background-color: var(--lightest-primary-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   width: 340px;
   height: 352px;
@@ -260,10 +276,11 @@ body {
   align-items: center;
   width: 80px;
   height: 80px;
-  background-color: white;
+  background-color: var(--constrast-color);
   margin: 0 0 20px;
   padding: 0;
   border-radius: 50%;
+  box-shadow: var(--lang-frame-skill-shadow);
 }
 
 .langFrameAndSkillsIcon {
@@ -282,7 +299,7 @@ body {
 }
 
 .langFrameAndToolsBadges {
-  background-color: white;
+  background-color: var(--constrast-color);
   border-radius: 8px;
   margin: 0;
   padding: 12px;
@@ -291,7 +308,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: var(--saturated-primary-color);
   text-align: center;
   white-space: nowrap;
 }
