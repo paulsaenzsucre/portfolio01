@@ -172,7 +172,6 @@ body {
 }
 
 .langBadges {
-  /*flex: 1 2 auto;*/
   background-color: #ebf0ee;
   border-radius: 4px;
   margin: 0;
@@ -204,14 +203,48 @@ body {
 #aboutMeContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  gap: 25px;
+  background-image: url(../images/illustration_1_about_me_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 119px 107px;
+  background-position: top 0px right -20px;
+  margin-bottom: 20px;
+}
+
+#aboutMeHeader{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-image: url(../images/illustration_2_about_me_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 127px 57px;
+  background-position: bottom 23px left -30px;
+}
+
+.btnGetMyResume {
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: white;
+  width: 159px;
+  height: 48px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0 0 25px;
 }
 
 .langFrameAndSkillCard{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   margin: 0;
   padding: 0;
   background-color: #ebf0ee;
@@ -219,4 +252,57 @@ body {
   border-radius: 8px;
   width: 340px;
   height: 352px;
+}
+
+.langFrameAndSkillsIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  margin: 0 0 20px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.langFrameAndSkillsIcon {
+  width: 48px;
+}
+
+.langFrameAndToolsBadgesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.langFrameAndToolsBadges {
+  background-color: white;
+  border-radius: 8px;
+  margin: 0;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.langFrameAndSkillsTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 0 ;
 }
