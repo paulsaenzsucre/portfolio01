@@ -342,6 +342,40 @@ body {
   margin-bottom: 20px;
 }
 
+.input-fields {
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  height: 48px;
+  width: 327px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.input-fields::placeholder {
+  color: #6B778C;
+}
+
+.input-textarea::placeholder {
+  color: #091E42;
+}
+
+.input-textarea {
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #60C095;
+  border-radius: 4px;
+  height: 144px;
+  width: 327px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 footer{
   text-align: center;
 }
