@@ -344,11 +344,11 @@ body {
 
 .input-fields {
   padding: 4px 12px 4px 12px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #b0d9d4;
   border-radius: 4px;
   height: 48px;
   width: 327px;
-  font-family: 'Inter';
+  font-family: 'Inter' sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -356,27 +356,27 @@ body {
 }
 
 .input-fields::placeholder {
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .input-textarea::placeholder {
-  color: #091E42;
+  color: #091e42;
 }
 
 .input-textarea {
   padding: 4px 12px 4px 12px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   height: 144px;
   width: 327px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
 
-footer{
+footer {
   text-align: center;
 }
 
