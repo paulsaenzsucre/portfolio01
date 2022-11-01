@@ -323,3 +323,34 @@ body {
   color: #344563;
   margin: 0;
 }
+
+#contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+footer{
+  text-align: center;
+}
+
+#final-separator {
+  background-color: black;
+  border-radius: 5px;
+  width: 113px;
+  height: 4px;
+  margin: 25px auto 30px;
+  border: none;
+}
