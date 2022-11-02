@@ -323,3 +323,108 @@ body {
   color: #344563;
   margin: 0;
 }
+
+#contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.input-fields {
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #b0d9d4;
+  border-radius: 4px;
+  height: 48px;
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.input-fields::placeholder {
+  color: #6b778c;
+}
+
+.input-textarea::placeholder {
+  color: #091e42;
+}
+
+.input-textarea {
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  height: 144px;
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+footer {
+  text-align: center;
+}
+
+#final-separator {
+  background-color: black;
+  border-radius: 5px;
+  width: 113px;
+  height: 4px;
+  margin: 25px auto 30px;
+  border: none;
+  margin-top: 300px;
+}
+
+#email-line {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0 24px 0;
+  max-width: 370px;
+}
+
+.social-media-icons-container2 {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 24px 0 24px;
+  padding: 0;
+}
+
+#form-background {
+  background-image: url(../images/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-size: 92px 132px;
+  background-position: bottom right -20px;
+}
+
+.input-textarea::-webkit-resizer {
+  background-image: url(../images/resizer_handle_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+}
