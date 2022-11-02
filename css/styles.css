@@ -421,3 +421,10 @@ footer {
   background-size: 92px 132px;
   background-position: bottom right -20px;
 }
+
+.input-textarea::-webkit-resizer {
+  background-image: url(../images/resizer_handle_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+}
