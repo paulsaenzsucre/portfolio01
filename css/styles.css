@@ -411,96 +411,188 @@ footer {
   white-space: nowrap;
 }
 
-#aboutMeContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 20px;
+/* Contact Form Styles */
+
+#contact-form-container {
+  row-gap: 58px;
 }
 
-#aboutMeHeader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-image: url(../images/illustration_1_about_me_mobile.svg), url(../images/illustration_2_about_me_mobile.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: 119px 107px, 127px 57px;
-  background-position: top 0 right -20px, bottom 0 left -30px;
-  margin-bottom: 35px;
-}
-
-.langFrameAndSkillCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  background-color: var(--lightest-primary-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  width: 340px;
-  height: 352px;
-}
-
-.langFrameAndSkillsIconContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  background-color: var(--constrast-color);
-  margin: 0 0 20px;
-  padding: 0;
-  border-radius: 50%;
-  box-shadow: var(--lang-frame-skill-shadow);
-}
-
-.langFrameAndSkillsIcon {
-  width: 48px;
-}
-
-.langFrameAndToolsBadgesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  list-style: none;
-  margin: 0 0 16px;
-  padding: 0;
-}
-
-.langFrameAndToolsBadges {
-  background-color: var(--constrast-color);
-  border-radius: 8px;
-  margin: 0;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: var(--saturated-primary-color);
+#contact-form-container header h2 {
   text-align: center;
-  white-space: nowrap;
 }
 
-.langFrameAndSkillsTitle {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  color: #344563;
-  margin: 0;
+.input-textarea {
+  border: 1px solid var(--border-green-color);
+  height: 114px;
 }
+
+/* Footer Styles */
+
+#footer-mobile-background {
+  position: absolute;
+  top: -117px;
+  right: 0;
+}
+
+#footer-desktop-background-left,
+#footer-desktop-background-middle,
+#footer-desktop-background-right,
+#about-me-desktop-right,
+#about-me-desktop-left {
+  display: none;
+}
+
+#email-line {
+  margin: 12px 0;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+#final-separator {
+  background-color: black;
+  border-radius: 5px;
+  width: 113px;
+  height: 4px;
+  margin: 25px auto 30px;
+  border: none;
+  margin-top: 300px;
+}
+
+/* This applies from 768px onwards */
+@media (min-width: 768px) and (max-width: 1099px) {
+  body {
+    background-image: url(../images/header_ilustration_desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto 780px;
+    background-position: top center;
+  }
+
+  #main-container {
+    background-image: none;
+    justify-content: flex-start;
+    height: auto;
+    width: auto;
+  }
+
+  #page-header {
+    margin: 10px 0 0;
+    text-align: center;
+  }
+
+  .headline {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 90px;
+  }
+
+  .supportingLine {
+    max-width: 920px;
+  }
+
+  #top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    border: 0;
+    margin: 26px 0;
+    padding: 0;
+  }
+
+  .menu-item {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #hamburger-button {
+    display: none;
+  }
+
+  #mainContainer {
+    align-items: center;
+    gap: 38px;
+    height: 100vh;
+    background-image: none;
+  }
+
+  /* My Recent Works Desktop Styles */
+
+  #my-recent-works-container {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 24px;
+  }
+
+  #my-recent-works-container header {
+    grid-column: 1 / span 2;
+  }
+
+  #recentWorkSeparator {
+    display: none;
+  }
+
+  .workCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightest-primary-color);
+    border: 1px solid var(--border-gray-color);
+    border-radius: 8px;
+    max-width: 340px;
+    height: 474px;
+  }
+
+  /* About Me Desktop Styles */
+
+  #about-me-container {
+    margin: 24px 6vw 92px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 24px;
+    position: relative;
+  }
+
+  #about-me-container header {
+    grid-column: 1 / span 2;
+    position: relative;
+  }
+
+  #about-me-desktop-right {
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: -6vw;
+  }
+
+  #about-me-desktop-left {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: calc(-178px + 1vw);
+  }
+
+  .lang-frame-skill-card {
+    justify-self: stretch;
+    width: auto;
+    height: 352px;
+  }
 
 #contact-form-container {
   display: flex;
