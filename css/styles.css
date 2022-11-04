@@ -288,8 +288,30 @@ body {
   box-shadow: var(--lang-frame-skill-shadow);
 }
 
+@keyframes rotate {
+  50% {
+    transform: translateX(-30px); 
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
 .langFrameAndSkillsIcon {
   width: 48px;
+}
+
+.langFrameAndSkillsIcon:hover {
+  animation: rotate 1s cubic-bezier(0.92,-0.14, 0.12, 1.74) forwards;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateZ(-45deg); 
+  }
+  100% {
+    transform: rotateZ(45deg);
+  }
 }
 
 .langFrameAndToolsBadgesContainer {
