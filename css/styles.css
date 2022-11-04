@@ -594,107 +594,247 @@ footer {
     height: 352px;
   }
 
-#contact-form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 20px;
+  /* Contact Form styles */
+
+  #contact-form-container {
+    margin: 24px 6vw 200px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(1, auto);
+    column-gap: 24px;
+  }
+
+  .font-size-30 {
+    font-size: 30px;
+    line-height: calc(30px + 1vw);
+  }
+
+  .button-left {
+    align-self: flex-start;
+  }
+
+  /* footer styles */
+
+  footer {
+    padding: 24px;
+    border-top: 1px solid var(--footer-separator-color);
+  }
+
+  #footer-desktop-background-left {
+    display: block;
+    position: absolute;
+    top: -350px;
+    left: 0;
+  }
+
+  #footer-desktop-background-middle {
+    display: block;
+    position: absolute;
+    top: -190px;
+    left: 280px;
+  }
+
+  #footer-desktop-background-right {
+    display: block;
+    position: absolute;
+    top: -498px;
+    right: 0;
+  }
+
+  #final-separator,
+  #email-line,
+  #footer-mobile-background,
+  #about-me-mobile-right,
+  #about-me-mobile-left {
+    display: none;
+  }
 }
 
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 20px;
-}
+@media (min-width: 1100px) {
+  body {
+    background-image: url(../images/header_ilustration_desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
 
-.input-fields {
-  padding: 4px 12px 4px 12px;
-  border: 1px solid #b0d9d4;
-  border-radius: 4px;
-  height: 48px;
-  width: 327px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-}
+  #main-container {
+    background-image: none;
+    justify-content: flex-start;
+  }
 
-.input-fields::placeholder {
-  color: #6b778c;
-}
+  #page-header {
+    margin: 10px 0 0;
+    text-align: center;
+  }
 
-.input-textarea::placeholder {
-  color: #091e42;
-}
+  .headline {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 90px;
+  }
 
-.input-textarea {
-  padding: 4px 12px 4px 12px;
-  border: 1px solid #60c095;
-  border-radius: 4px;
-  height: 144px;
-  width: 327px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-}
+  .supportingLine {
+    max-width: 920px;
+  }
 
-footer {
-  text-align: center;
-}
+  #top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    border: 0;
+    margin: 26px 0;
+    padding: 0;
+  }
 
-#final-separator {
-  background-color: black;
-  border-radius: 5px;
-  width: 113px;
-  height: 4px;
-  margin: 25px auto 30px;
-  border: none;
-  margin-top: 300px;
-}
+  .menu-item {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
 
-#email-line {
-  display: inline;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  color: var(--secondary-color);
-  margin: 0;
-  padding: 0 24px 0;
-  max-width: 370px;
-}
+  #logo {
+    display: none;
+  }
 
-.social-media-icons-container2 {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
-  gap: 20px;
-  margin: 10px 24px 0 24px;
-  padding: 0;
-}
+  #hamburger-button {
+    display: none;
+  }
 
-#form-background {
-  background-image: url(../images/illustration-contact-form.svg);
-  background-repeat: no-repeat;
-  background-size: 92px 132px;
-  background-position: bottom right -20px;
-}
+  #mainContainer {
+    align-items: center;
+    gap: 38px;
+    height: 100vh;
+    background-image: none;
+  }
 
-.input-textarea::-webkit-resizer {
-  background-image: url(../images/resizer_handle_icon.svg);
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  background-position: center;
+  /* My Recent Works Desktop Styles */
+
+  #my-recent-works-container {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 24px;
+  }
+
+  #my-recent-works-container header {
+    grid-column: 1 / span 3;
+  }
+
+  #recentWorkSeparator {
+    display: none;
+  }
+
+  .workCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightest-primary-color);
+    border: 1px solid var(--border-gray-color);
+    border-radius: 8px;
+    max-width: 340px;
+    height: 474px;
+  }
+
+  /* About Me Desktop Styles */
+
+  #about-me-container {
+    margin: 24px 6vw 92px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 24px;
+    position: relative;
+  }
+
+  #about-me-container header {
+    grid-column: 1 / span 3;
+    position: relative;
+  }
+
+  #about-me-desktop-right {
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: -6vw;
+  }
+
+  #about-me-desktop-left {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: calc(-178px + 1vw);
+  }
+
+  .lang-frame-skill-card {
+    justify-self: stretch;
+    width: auto;
+    height: 352px;
+  }
+
+  /* Contact Form styles */
+
+  #contact-form-container {
+    margin: 24px 6vw 200px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(1, auto);
+    column-gap: 24px;
+  }
+
+  .font-size-30 {
+    font-size: 30px;
+    line-height: calc(30px + 1vw);
+  }
+
+  .button-left {
+    align-self: flex-start;
+  }
+
+  /* footer styles */
+
+  footer {
+    padding: 24px;
+    border-top: 1px solid var(--footer-separator-color);
+  }
+
+  #footer-desktop-background-left {
+    display: block;
+    position: absolute;
+    top: -350px;
+    left: 0;
+  }
+
+  #footer-desktop-background-middle {
+    display: block;
+    position: absolute;
+    top: -190px;
+    left: 280px;
+  }
+
+  #footer-desktop-background-right {
+    display: block;
+    position: absolute;
+    top: -498px;
+    right: 0;
+  }
+
+  #final-separator,
+  #email-line,
+  #footer-mobile-background,
+  #about-me-mobile-right,
+  #about-me-mobile-left {
+    display: none;
+  }
 }

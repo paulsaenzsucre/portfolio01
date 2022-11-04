@@ -193,29 +193,35 @@
         </ul>
       </section>
     </article>
-    
+
     <article id="contact-form-container">
-      <header>
-        <h2 class="headline">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      <header class="flex-container">
+        <h2 class="font-size-30 inter-font-700">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       </header>
-      <section id="form-background">
-        <form id="contact-form" action="https://formspree.io/f/mzbwkgyl" method="POST">
-          <input class="input-fields" type="text" name="name" id="name" maxlength="30" placeholder="Full Name" required>
-          <input class="input-fields" type="email" name="email" id="email" placeholder="Email Address" required>
-          <textarea class="input-textarea" name="message" id="message" cols="30" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
-          <button type="submit" class="button">Get in touch</button>
-        </form>
-        <ul class="social-media-icons-container2">
-          <li><a href="https://twitter.com/hashtag/SoyPYMEPeru?src=hashtag_click"><img src="images/twitter.svg" alt="Twitter logo" class="social-media-icons"></a></li>
-          <li><a href="https://www.linkedin.com/feed/"><img src="images/Linkedin.svg" alt="Linkedin logo" class="social-media-icons"></a></li>
-          <li><a href="https://medium.com/"><img src="images/medium.svg" alt="Medium logo" class="social-media-icons"></a></li>
-          <li><a href="https://github.com/elafildecolor"><img src="images/github.svg" alt="Github logo" class="social-media-icons"></a> </li>
-          <li><a href="https://www.angellist.com/"><img src="images/angellist.svg" alt="Angellist logo" class="social-media-icons"></a> </li>          
-        </ul>
-      </section>
+      <form class="flex-container" action="https://formspree.io/f/mzbwkgyl" method="POST">
+        <input class="inter-font-400 font-size-15_24" type="text" name="name" id="name" maxlength="30" placeholder="Full Name" required>
+        <input class="inter-font-400 font-size-15_24" type="email" name="email" id="email" placeholder="Email Address" required>
+        <textarea class="input-textarea inter-font-400 font-size-15_24" name="message" id="message" cols="30" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
+        <button type="submit" class="button button-left inter-font-500">Get in touch</button>
+      </form>        
     </article>
+
     <footer>
-      <h2 id="email-line">myemailhere@email.com</h2>
+      <div id="footer-mobile-background">
+        <img src="images/illustration-contact-form.svg" alt="structure" style="margin-bottom:100px;">
+      </div>
+      <div id="footer-desktop-background-left"><img src="images/footer-desktop-background-left.svg" alt=""></div>
+      <div id="footer-desktop-background-middle"><img src="images/footer-desktop-background-middle.svg" alt=""></div>
+      <div id="footer-desktop-background-right"><img src="images/footer-desktop-background-right.svg" alt=""></div>
+      
+      <ul class="social-media-icons-container">
+        <li><a href="https://twitter.com/hashtag/SoyPYMEPeru?src=hashtag_click"><img src="images/twitter.svg" alt="Twitter logo" class="social-media-icons"></a></li>
+        <li><a href="https://www.linkedin.com/feed/"><img src="images/Linkedin.svg" alt="Linkedin logo" class="social-media-icons"></a></li>
+        <li><a href="https://medium.com/"><img src="images/medium.svg" alt="Medium logo" class="social-media-icons"></a></li>
+        <li><a href="https://github.com/elafildecolor"><img src="images/github.svg" alt="Github logo" class="social-media-icons"></a> </li>
+        <li><a href="https://www.angellist.com/"><img src="images/angellist.svg" alt="Angellist logo" class="social-media-icons"></a> </li>          
+      </ul>
+      <p id="email-line" class="inter-font-400">myemailhere@email.com</p>
       <hr id="final-separator">
     </footer>
   </main>
