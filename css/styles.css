@@ -183,6 +183,11 @@ body {
   border-radius: 8px;
   max-width: 340px;
   height: 474px;
+  transition: 0.2s;
+}
+
+.workCard:hover {
+  transform: scale(1.05);
 }
 
 .workCardInfoContainer {
