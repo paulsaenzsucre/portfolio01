@@ -428,3 +428,11 @@ footer {
   background-size: 24px 24px;
   background-position: center;
 }
+
+.scroll-down {
+  transition: 0.35s;
+}
+
+.scroll-down:hover {
+  transform: translateY(20px);
+}
