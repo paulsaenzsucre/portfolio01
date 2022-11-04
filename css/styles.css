@@ -722,7 +722,7 @@ footer {
   #my-recent-works-container {
     margin-right: 6vw;
     margin-left: 6vw;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 24px;
   }
