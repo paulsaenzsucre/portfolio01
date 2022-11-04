@@ -260,13 +260,13 @@ footer {
   margin: 26px auto0;
 }
 
-#myRecentWorksContainer {
-  display: grid;
-  grid-template-columns: auto;
+/* My Recent Works Mobile Styles */
+
+#my-recent-works-container {
   grid-template-rows: repeat(7, auto);
   row-gap: 24px;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 5px;
 }
 
 #recentWorkSeparator {
@@ -274,33 +274,31 @@ footer {
   border-radius: 5px;
   width: 48px;
   height: 4px;
-  margin: 25px auto 30px;
+  margin: 25px auto 38px;
   border: none;
 }
 
-.workCard {
+.work-card {
+  justify-self: stretch;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
   background-color: var(--lightest-primary-color);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-gray-color);
   border-radius: 8px;
-  max-width: 340px;
   height: 474px;
 }
 
-.workCardInfoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.work-card-info-container {
   gap: 12px;
   background-color: var(--constrast-color);
+  border: 0;
   border-radius: 8px;
   height: 222px;
-  padding: 0 16px 0;
+  padding: 0 11px;
 }
 
 .workCardInfoTitle {
@@ -335,6 +333,80 @@ footer {
   font-size: 12px;
   letter-spacing: 0.03em;
   color: #3a4a42;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* About Me Mobile Styles */
+
+#about-me-container {
+  row-gap: 58px;
+}
+
+#about-me-container header {
+  gap: 20px;
+  position: relative;
+}
+
+#about-me-mobile-right {
+  display: block;
+  position: absolute;
+  top: -50px;
+  right: -23px;
+}
+
+#about-me-mobile-left {
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: -23px;
+}
+
+.lang-frame-skill-card {
+  justify-self: stretch;
+  gap: 30px;
+  background-color: var(--lightest-primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  height: 352px;
+}
+
+.lang-frame-skill-icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: var(--constrast-color);
+  margin: 0 0 20px;
+  border-radius: 50%;
+  box-shadow: var(--lang-frame-skill-shadow);
+}
+
+.lang-frame-skill-icon {
+  width: 48px;
+}
+
+.lang-frame-skill-title {
+  text-align: center;
+  color: var(--lang-frame-skill-title-color);
+  margin: 0;
+}
+
+.lang-frame-skill-badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.lang-frame-skill-badges {
+  background-color: var(--constrast-color);
+  border-radius: 8px;
+  margin: 0;
+  padding: 12px;
+  color: var(--saturated-primary-color);
   text-align: center;
   white-space: nowrap;
 }
