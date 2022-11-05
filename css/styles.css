@@ -290,6 +290,11 @@ footer {
   border: 1px solid var(--border-gray-color);
   border-radius: 8px;
   height: 474px;
+  transition: 0.2s;
+}
+
+.workCard:hover {
+  transform: scale(1.05);
 }
 
 .work-card-info-container {
@@ -380,8 +385,32 @@ footer {
   box-shadow: var(--lang-frame-skill-shadow);
 }
 
+@keyframes rotate {
+  50% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
+
 .lang-frame-skill-icon {
   width: 48px;
+}
+
+.lang-frame-skill-icon:hover {
+  animation: rotate 1s cubic-bezier(0.92, -0.14, 0.12, 1.74) forwards;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateZ(-45deg);
+  }
+
+  100% {
+    transform: rotateZ(45deg);
+  }
 }
 
 .lang-frame-skill-title {
@@ -837,4 +866,12 @@ footer {
   #about-me-mobile-left {
     display: none;
   }
+}
+
+.scroll-down {
+  transition: 0.35s;
+}
+
+.scroll-down:hover {
+  transform: translateY(20px);
 }
