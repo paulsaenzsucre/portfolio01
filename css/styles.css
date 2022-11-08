@@ -3,7 +3,7 @@
 
 /* Defining global CSS variables */
 :root {
-  --saturated-primary-color: #36b37e;
+  --saturated-primary-color: #1d6346;
   --lighter-primary-color: #c5e9da;
   --lightest-primary-color: #ebf0ee;
   --secondary-color: #172b4d;
@@ -13,7 +13,7 @@
   --input-placeholder-color: #6b778c;
   --textarea-placeholder-color: #091e42;
   --button-pressed-color: #008552;
-  --button-enabled-color: #36b37f;
+  --button-enabled-color: #00663f;
   --button-hover-color: #36b37f;
   --footer-separator-color: #dfe1e6;
   --button-hover-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
