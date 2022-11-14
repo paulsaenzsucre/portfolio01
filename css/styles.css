@@ -162,6 +162,14 @@ footer {
   text-align: center;
 }
 
+#page-header-mobile-menu{
+  height: 100vh;
+}
+
+#logo-mobile-menu {
+  display: none;
+}
+
 #toolbar {
   display: inline-flex;
   justify-content: space-between;
