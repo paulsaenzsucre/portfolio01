@@ -29,7 +29,8 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  border: 0;
+  border: 0;  
+  scroll-behavior: smooth;
 }
 
 .flex-container {
@@ -168,6 +169,25 @@ footer {
 
 #logo-mobile-menu {
   display: none;
+}
+
+#hamburger-button-mobile-menu {
+  display: none;
+}
+
+#close-btn {
+  display: none;
+}
+
+#close-btn-mobile-menu {
+  display: block;
+}
+
+#top-menu-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 #toolbar {

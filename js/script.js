@@ -20,3 +20,4 @@ for(let x=0; x<document.getElementsByClassName("menu-item").length; x++)
 }
 
 document.getElementById("hamburger-button").addEventListener("click",mostrarMenu);
+document.getElementById("close-btn").addEventListener("click",ocultarMenu);
