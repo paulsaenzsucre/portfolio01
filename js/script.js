@@ -28,10 +28,19 @@ function ocultarMenu() {
   document.getElementById('header-separator').style.display='none';
 }
 
+function checkMediaIsBelow768(myMediaQuery) {
+  if(myMediaQuery.matches) {
+    ocultarMenu();
+  }
+}
+
+let myMediaQuery = window.matchMedia("(min-width: 768px)")
+
 for(let x=0; x<document.getElementsByClassName("menu-item").length; x++)
 {
   document.getElementsByClassName("menu-item")[x].addEventListener("click",ocultarMenu,false);
 }
 
+myMediaQuery.addEventListener('change',checkMediaIsBelow768);
 document.getElementById("hamburger-button").addEventListener("click",mostrarMenu);
 document.getElementById("close-btn").addEventListener("click",ocultarMenu);
