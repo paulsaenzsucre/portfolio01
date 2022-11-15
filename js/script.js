@@ -56,9 +56,43 @@ function fillProjectSection() {
 
   var projects=[];
   projects.push(project);
+
+  for(let i=0; i<projects.length;i += 1)
+  {
+    var section=document.createElement('section');
+    section.setAttribute('class','work-card');
+    var div=document.createElement('div');
+    div.setAttribute('class','flex-container work-card-info-container');
+    var infoTitle=document.createElement('h3');
+    infoTitle.setAttribute('class','workCardInfoTitle');
+    infoTitle.appendChild(document.createTextNode(projects[i].heading));
+    infoTitle.appendChild(document.createElement('br'));
+    infoTitle.appendChild(document.createTextNode(projects[i].subheading));
+    var ul = document.createElement('ul');
+    ul.setAttribute('class','langBadgesContainer');
+    for(let j=0;j<projects[i].langBadges.length;j += 1)
+    {
+      var li=document.createElement('li');
+      li.setAttribute('class','langBadges');
+      li.appendChild(document.createTextNode(projects[i].langBadges[j]));
+      ul.appendChild(li);
+    }
+    var btn=document.createElement('button');
+    btn.setAttribute('class','button inter-font-500');
+    btn.setAttribute('type','button');
+    btn.appendChild(document.createTextNode('See Projects'));
+
+
+    div.appendChild(infoTitle);
+    div.appendChild(ul);
+    div.appendChild(btn);
+    section.appendChild(div);
+  }
+
   tree.appendChild(article);
   tree.appendChild(heading);
   tree.appendChild(separator);
+  tree.appendChild(section);
   document.getElementById("my-recent-works-container").appendChild(tree);
 }
 
@@ -77,3 +111,4 @@ for (let x = 0; x < document.getElementsByClassName('menu-item').length; x += 1)
 myMediaQuery.addEventListener('change', checkMediaIsBelow768);
 document.getElementById('hamburger-button').addEventListener('click', mostrarMenu);
 document.getElementById('close-btn').addEventListener('click', ocultarMenu);
+document.addEventListener('DOMContentLoaded',fillProjectSection);
