@@ -26,6 +26,42 @@ function ocultarMenu() {
   document.getElementById('header-separator').style.display = 'none';
 }
 
+function fillProjectSection() {
+  var tree = document.createDocumentFragment();
+  var article = document.createElement('article');
+  article.setAttribute('id','my-recent-works-container');
+
+  var heading = document.createElement('h2','headline');
+  heading.setAttribute('class','headline');
+  heading.appendChild(document.createTextNode('My Recent Works'));
+
+  var separator=document.createElement('hr');
+  separator.setAttribute('id','recentWorkSeparator');
+
+  var project= {
+    heading: 'Multi-Post Stories',
+    subheading: 'Gain+Glory',
+    name: 'Keeping track of hundreds of components',
+    description: 'Description',
+    image: '',
+    langBadges: [
+      'Ruby on rails',
+      'css',
+      'JavaScript',
+      'html'
+    ],
+    liveVersionLink:'',
+    sourceLink:''
+  }
+
+  var projects=[];
+  projects.push(project);
+  tree.appendChild(article);
+  tree.appendChild(heading);
+  tree.appendChild(separator);
+  document.getElementById("my-recent-works-container").appendChild(tree);
+}
+
 function checkMediaIsBelow768(myMediaQuery) {
   if (myMediaQuery.matches) {
     ocultarMenu();
