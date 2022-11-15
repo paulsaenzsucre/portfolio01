@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Paul Sáenz Portfolio</title>
 </head>
-<body>
-  
+<body>  
   <header id="page-header">
     <div id="toolbar">
       <a id="logo" href="#"><h2 id="logoPlaceHolder">Welcome</h2></a> 
-      <nav>
+      <nav id="nav-bar">        
+        <a id="close-btn" href="#" id="boton-cerrar">&#10006;</a>
+        <a id="hamburger-button" href="#"><img src="images/hamburger.svg" alt="Hamburger button"></a>
         <ul id="top-menu">
           <li ><a class="menu-item" href="#page-header">Porfolio</a></li>
           <li ><a class="menu-item" href="#about-me-container">About</a></li>
           <li ><a class="menu-item" href="#contact-form-container">Contact</a></li>
-        </ul>
-        <a id="hamburger-button" href="#"><img src="images/hamburger.svg" alt="Hamburger button"></a>
+        </ul>        
       </nav>    
-    </div>    
+    </div>
+    <hr id="header-separator">  
   </header>
   <main>
     <article class="flex-container" id="main-container">
@@ -229,3 +230,5 @@
   </main>
 </body>
 </html>
+
+<script src="js/script.js"></script>
