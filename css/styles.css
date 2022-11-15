@@ -29,7 +29,7 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  border: 0;  
+  border: 0;
   scroll-behavior: smooth;
 }
 
@@ -158,10 +158,6 @@ footer {
   text-align: center;
 }
 
-html-mobile-menu {
-  background: gray;
-}
-
 #page-header {
   margin: 10px 0 0;
   text-align: center;
@@ -215,7 +211,7 @@ html-mobile-menu {
 
 /**** Menu Mobile Styles ****/
 
-#page-header-mobile-menu{
+#page-header-mobile-menu {
   height: 100vh;
   background: #e5e5e5;
 }
@@ -249,7 +245,7 @@ html-mobile-menu {
 #close-btn-mobile-menu {
   display: block;
   align-self: flex-end;
-  color: #67798E;
+  color: #67798e;
   font-size: larger;
   text-align: right;
   margin: 24px 38px 0;
@@ -257,7 +253,7 @@ html-mobile-menu {
 
 #toolbar-mobile-menu {
   height: 93%;
-  background:white;
+  background: white;
   border-radius: 0 0 30px 30px;
 }
 
@@ -275,7 +271,7 @@ html-mobile-menu {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
   margin-left: 24px;
 }
 
