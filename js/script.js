@@ -1,14 +1,16 @@
 function mostrarMenu() {
-  document.getElementById('page-header').id = 'page-header-mobile-menu';
+  document.getElementById("page-header").id = "page-header-mobile-menu";
   document.getElementById("logo").id= "logo-mobile-menu";
   document.getElementById("hamburger-button").id= "hamburger-button-mobile-menu";
   document.getElementById("close-btn").id= "close-btn-mobile-menu";
   document.getElementById("top-menu").id= "top-menu-mobile-menu";
-
+  document.getElementById("toolbar").id= "toolbar-mobile-menu";
+  document.getElementById("nav-bar").id= "nav-bar-mobile-menu";
   for(let x=0; x<document.getElementsByClassName("menu-item").length; x++)
   {
     document.getElementsByClassName("menu-item")[x].classList.add('menu-item-mobile-menu');
   }
+  document.getElementById('header-separator').style.display='block';
 }
 
 function ocultarMenu() {
@@ -17,11 +19,13 @@ function ocultarMenu() {
   document.getElementById("hamburger-button-mobile-menu").id= "hamburger-button";
   document.getElementById("close-btn-mobile-menu").id= "close-btn";
   document.getElementById("top-menu-mobile-menu").id= "top-menu";
-
+  document.getElementById("toolbar-mobile-menu").id= "toolbar";
+  document.getElementById("nav-bar-mobile-menu").id= "nav-bar"
   for(let x=0; x<document.getElementsByClassName("menu-item").length; x++)
   {
     document.getElementsByClassName("menu-item")[x].classList.remove('menu-item-mobile-menu');
   }
+  document.getElementById('header-separator').style.display='none';
 }
 
 for(let x=0; x<document.getElementsByClassName("menu-item").length; x++)
