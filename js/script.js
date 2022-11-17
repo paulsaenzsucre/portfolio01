@@ -269,12 +269,12 @@ const form = document.getElementById('contact');
 const email = document.getElementById('email');
 const eMessage = document.getElementById('error');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (evt) => {
   if (email.value === email.value.toLowerCase()) {
     eMessage.textContent = '';
   } else {
-    e.preventDefault();
-    eMessage.textContent = 'The email must be in lowercase';
+    evt.preventDefault();
+    eMessage.textContent = 'The email address must be in lowercase';
     eMessage.style.display = 'block';
   }
 });
