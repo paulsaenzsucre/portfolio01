@@ -264,3 +264,17 @@ myMediaQuery.addEventListener('change', checkMediaIsBelow768);
 document.getElementById('hamburger-button').addEventListener('click', mostrarMenu);
 document.getElementById('close-btn').addEventListener('click', ocultarMenu);
 document.addEventListener('DOMContentLoaded', fillProjectSection);
+
+const form = document.getElementById('contact');
+const email = document.getElementById('email');
+const eMessage = document.getElementById('error');
+
+form.addEventListener('submit', (evt) => {
+  if (email.value === email.value.toLowerCase()) {
+    eMessage.textContent = '';
+  } else {
+    evt.preventDefault();
+    eMessage.textContent = 'The email address must be in lowercase';
+    eMessage.style.display = 'block';
+  }
+});
