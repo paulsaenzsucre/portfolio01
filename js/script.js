@@ -291,3 +291,11 @@ form.addEventListener('input', () => {
   localStorage.setItem('userFormDataCollected', JSON.stringify(valuesObj));
 });
 
+let getData = localStorage.getItem('userFormDataCollected');
+getData = JSON.parse(getData);
+
+if (getData != null) {
+  nameIn.value = getData.nameValue;
+  email.value = getData.emailValue;
+  message.value = getData.textAreaValue;
+}
