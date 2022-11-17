@@ -13,7 +13,7 @@
 <path d="M-14.7914 32.2166L0.0967395 15.4941L2.09206 16.5681L-0.0567445 37.6884L-14.7914 32.2166Z" fill="#36B37E"/>
 <path d="M2.09206 16.5674L20.9709 35.949L15.343 43.4153L-0.0567474 37.6878L2.09206 16.5674Z" fill="white" stroke="#36B37E" stroke-width="0.633632" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M26.4964 45.2049L0.864197 48.5289L15.3431 43.415L26.4964 45.2049Z" fill="white" stroke="#36B37E" stroke-width="0.633632" stroke-miterlimit="10" stroke-linejoin="round"/>
-<mask id="mask0_73_258" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-58" y="16" width="74" height="41">
+<mask id="mask0_73_258" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="-58" y="16" width="74" height="41">
 <path d="M-56.8336 16.7588L15.2077 43.3089L0.941377 48.2228L-35.0768 56.5584L-56.8336 16.7588Z" fill="white" stroke="#36B37E" stroke-width="0.633632" stroke-miterlimit="10" stroke-linejoin="round"/>
 </mask>
 <g mask="url(#mask0_73_258)">

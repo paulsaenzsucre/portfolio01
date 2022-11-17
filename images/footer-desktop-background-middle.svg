@@ -9,7 +9,7 @@
 <path d="M94.5729 61.7762L56.083 52.3691" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M81.2584 58.5089L87.9474 53.1603L87.2236 60.0189L82.1035 63.7175L81.2584 58.5089Z" fill="white" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M87.9471 53.1601L86.2979 29.8747" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
-<mask id="mask0_34_2668" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="51" width="80" height="39">
+<mask id="mask0_34_2668" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="16" y="51" width="80" height="39">
 <path d="M17.1456 75.9294L49.2174 52.0103L60.5241 53.3359L94.5733 61.7757L90.4388 63.7393L36.9864 89.1269L17.1456 75.9294Z" fill="white" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 </mask>
 <g mask="url(#mask0_34_2668)">
