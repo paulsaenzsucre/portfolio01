@@ -586,6 +586,11 @@ footer {
   height: 114px;
 }
 
+.invalid {
+  color: #b30003;
+  font-size: 1rem;
+}
+
 /* Footer Styles */
 
 #footer-mobile-background {
