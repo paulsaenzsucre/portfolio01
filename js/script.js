@@ -279,3 +279,15 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+const nameIn = document.getElementById('name');
+const message = document.getElementById('message');
+
+form.addEventListener('input', () => {
+  const valuesObj = {
+    nameValue: nameIn.value,
+    emailValue: email.value,
+    textAreaValue: message.value,
+  };
+  localStorage.setItem('userFormDataCollected', JSON.stringify(valuesObj));
+});
+
