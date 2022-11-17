@@ -473,31 +473,6 @@ footer {
   display: none;
 }
 
-/* .langBadgesContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  list-style: none;
-  margin: 0 0 16px;
-  padding: 0;
-}
-
-.langBadges {
-  background-color: var(--lightest-primary-color);
-  border-radius: 4px;
-  margin: 0;
-  padding: 8px 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: #3a4a42;
-  text-align: center;
-  white-space: nowrap;
-} */
-
 /* About Me Mobile Styles */
 
 #about-me-container {
