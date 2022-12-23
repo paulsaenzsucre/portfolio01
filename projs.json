@@ -1,91 +1,42 @@
 [
   {
     "id": 0,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
+    "heading": "Leaderboard",
+    "subheading": "Game Scores App",
+    "title": "Leaderboard - Game Scores Web App",
+    "description": "Leaderboard is a project that lets users see a list of scores. It also provides the user with a form to add his own scores to the list. It uses the Leaderboard API to get and post scores. It was coded using standard technologies like HTML5, CSS3 and JavaScript; and has an object-oriented approach using a model view presenter pattern.",
+    "image": "images/projects/leaderboard2.png",
+    "imagePopup": "images/projects/leaderboard2.png",
     "langBadges": [
-      "Ruby on rails",
-      "css",
       "JavaScript",
-      "html"
+      "HTML5",
+      "CSS3",
+      "MVP",
+      "OOP"
     ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
+    "liveVersionLink": "https://elafildecolor.github.io/LeaderBoard/",
+    "sourceLink": "https://github.com/elafildecolor/LeaderBoard"
   },
   {
     "id": 1,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
+    "heading": "To Do List",
+    "subheading": "A Minimalist TODO List Web App",
+    "title": "To Do List - A Minimalist TODO List Web App",
+    "description": "To Do List is a single page web app that lets users manage a simple list of tasks. Users can add and remove tasks from the list. It was coded using standard technologies like HTML5, CSS3 and JavaScript; and has an object-oriented approach using a model view presenter pattern. Feel free to give me feedback or contact me about this project.",
+    "image": "images/projects/todolist1.png",
+    "imagePopup": "images/projects/todolist1.png",
     "langBadges": [
-      "Ruby on rails",
-      "css",
       "JavaScript",
-      "html"
+      "HTML5",
+      "CSS3",
+      "MVP",
+      "OOP"
     ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
+    "liveVersionLink": "https://elafildecolor.github.io/To-Do-List/",
+    "sourceLink": "https://github.com/elafildecolor/To-Do-List"
   },
   {
     "id": 2,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
-    "langBadges": [
-      "Ruby on rails",
-      "css",
-      "JavaScript",
-      "html"
-    ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
-  },
-  {
-    "id": 3,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
-    "langBadges": [
-      "Ruby on rails",
-      "css",
-      "JavaScript",
-      "html"
-    ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
-  },
-  {
-    "id": 4,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
-    "langBadges": [
-      "Ruby on rails",
-      "css",
-      "JavaScript",
-      "html"
-    ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
-  },
-  {
-    "id": 5,
     "heading": "Multi-Post Stories",
     "subheading": "Gain+Glory",
     "title": "Keeping track of hundreds of components",
