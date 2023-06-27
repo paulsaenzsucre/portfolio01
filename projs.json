@@ -1,55 +1,98 @@
 [
   {
     "id": 0,
-    "heading": "Leaderboard",
-    "subheading": "Game Scores App",
-    "title": "Leaderboard - Game Scores Web App",
-    "description": "Leaderboard is a project that lets users see a list of scores. It also provides the user with a form to add his own scores to the list. It uses the Leaderboard API to get and post scores. It was coded using standard technologies like HTML5, CSS3 and JavaScript; and has an object-oriented approach using a model view presenter pattern.",
-    "image": "images/projects/leaderboard2.png",
-    "imagePopup": "images/projects/leaderboard2.png",
+    "heading": "Spend Tracker",
+    "subheading": "",
+    "title": "Spend Tracker",
+    "description": "Spend Tracker is a fantastic app that helps you manage your money and budget wisely. With Spend Tracker, you can easily track your income and expenses, set goals and limits, and see your progress in real time. Spend Tracker also gives you insights and tips on how to save more and spend less. Whether you want to pay off debt, save for a vacation, or just have more control over your finances, Spend Tracker is the perfect tool for you. Download Spend Tracker today and start your journey to financial freedom!",
+    "image": "images/projects/spend-tracker-card.jpeg",
+    "imagePopup": "images/projects/spend-tracker-card.jpeg",
     "langBadges": [
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "MVP",
-      "OOP"
+      "Ruby",
+      "Rails",
+      "PostgreSQL"
     ],
-    "liveVersionLink": "https://elafildecolor.github.io/LeaderBoard/",
-    "sourceLink": "https://github.com/elafildecolor/LeaderBoard"
+    "liveVersionLink": "https://pss-spend-tracker.onrender.com/",
+    "sourceLink": "https://github.com/paulsaenzsucre/spend-tracker"
   },
   {
     "id": 1,
-    "heading": "To Do List",
-    "subheading": "A Minimalist TODO List Web App",
-    "title": "To Do List - A Minimalist TODO List Web App",
-    "description": "To Do List is a single page web app that lets users manage a simple list of tasks. Users can add and remove tasks from the list. It was coded using standard technologies like HTML5, CSS3 and JavaScript; and has an object-oriented approach using a model view presenter pattern. Feel free to give me feedback or contact me about this project.",
-    "image": "images/projects/todolist1.png",
-    "imagePopup": "images/projects/todolist1.png",
+    "heading": "Metrics",
+    "subheading": "",
+    "title": "Metrics",
+    "description": "Metrics React App is a powerful web application designed to effortlessly retrieve and display a comprehensive list of metrics sourced from an API. Crafted with proficiency in React and Redux, this dynamic application offers users a seamless experience in exploring and analyzing essential metrics. With its intuitive interface and responsive design, Metrics React App provides a user-friendly environment for effortlessly monitoring and managing metrics, empowering users to make data-driven decisions with confidence.",
+    "image": "images/projects/metrics.jpeg",
+    "imagePopup": "images/projects/metrics.jpeg",
     "langBadges": [
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "MVP",
-      "OOP"
+      "React",
+      "Redux",
+      "Javascript"
     ],
-    "liveVersionLink": "https://elafildecolor.github.io/To-Do-List/",
-    "sourceLink": "https://github.com/elafildecolor/To-Do-List"
+    "liveVersionLink": "https://paulsaenzsucre.dev/metrics-react-app/",
+    "sourceLink": "https://github.com/paulsaenzsucre/metrics-react-app"
   },
   {
     "id": 2,
-    "heading": "Multi-Post Stories",
-    "subheading": "Gain+Glory",
-    "title": "Keeping track of hundreds of components",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    "image": "images/popup-img-311w.png",
-    "imagePopup": "images/popup-img.png",
+    "heading": "Space Travelers",
+    "subheading": "",
+    "title": "Space Travelers",
+    "description": "Space Travelers' Hub is a web application for a company that provides commercial and scientific space travel services. It fetch data about rockets and misions from Api. The application will allow users to book rockets and join selected space missions. It was coded using React and Redux.",
+    "image": "images/projects/space.jpeg",
+    "imagePopup": "images/projects/space.jpeg",
     "langBadges": [
-      "Ruby on rails",
-      "css",
-      "JavaScript",
-      "html"
+      "React",
+      "Redux",
+      "JavaScript"
     ],
-    "liveVersionLink": "https://elafildecolor.github.io/MyPortfolio/",
-    "sourceLink": "https://github.com/elafildecolor/MyPortfolio"
+    "liveVersionLink": "https://www.paulsaenzsucre.dev/space-travelers-hub/",
+    "sourceLink": "https://github.com/paulsaenzsucre/space-travelers-hub"
+  },
+  {
+    "id": 3,
+    "heading": "Bookstore",
+    "subheading": "",
+    "title": "Bookstore",
+    "description": "Bookstore is a single page web app that lets users manage a book list. Users can add, edit, and remove books (title and author) from the list. It was coded using React.",
+    "image": "images/projects/bookstore.png",
+    "imagePopup": "images/projects/bookstore.png",
+    "langBadges": [
+      "React",
+      "JavaScript",
+      "HTML5"
+    ],
+    "liveVersionLink": "https://www.paulsaenzsucre.dev/Bookstore/",
+    "sourceLink": "https://github.com/paulsaenzsucre/Bookstore"
+  },
+  {
+    "id": 4,
+    "heading": "Math Magicians",
+    "subheading": "",
+    "title": "Math Magicians",
+    "description": "Is an intuitive and user-friendly single-page application designed to empower users with the ability to perform a wide range of simple calculations effortlessly. With its sleek and straightforward interface, the app showcases a robust calculator that caters to all your mathematical needs.",
+    "image": "images/projects/calculator.jpeg",
+    "imagePopup": "images/projects/calculator.jpeg",
+    "langBadges": [
+      "React",
+      "JavaScript",
+      "HTML5"
+    ],
+    "liveVersionLink": "https://www.paulsaenzsucre.dev/Math-Magicians/",
+    "sourceLink": "https://github.com/paulsaenzsucre/Math-Magicians"
+  },
+  {
+    "id": 5,
+    "heading": "Leader Board",
+    "subheading": "",
+    "title": "Leader Board",
+    "description": "Leaderboard is a project that lets users see a list of scores. It also provides the user with a form to add his own scores to the list. It uses the Leaderboard API to get and post scores. It was coded using standard technologies like HTML5, CSS3 and JavaScript; and has an object-oriented approach using a model view presenter pattern.",
+    "image": "images/projects/leaderboard.jpeg",
+    "imagePopup": "images/projects/leaderboard.jpeg",
+    "langBadges": [
+      "React",
+      "JavaScript",
+      "HTML5"
+    ],
+    "liveVersionLink": "https://www.paulsaenzsucre.dev/LeaderBoard/",
+    "sourceLink": "https://github.com/paulsaenzsucre/LeaderBoard"
   }
 ]
