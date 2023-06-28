@@ -382,6 +382,7 @@ footer {
   align-items: stretch;
   height: 29.6rem;
   transition: 0.2s;
+  overflow: hidden;
 }
 
 .workCard:hover {
@@ -389,7 +390,7 @@ footer {
 }
 
 .card-img {
-  max-height: 15rem;
+  max-height: 49%;
 }
 
 .info-container {
@@ -939,10 +940,6 @@ footer {
     max-width: 57.5rem;
     max-height: 67.688rem;
     align-items: stretch;
-  }
-
-  .card-img {
-    max-height: 15rem;
   }
 
   /* About Me Desktop Styles */
