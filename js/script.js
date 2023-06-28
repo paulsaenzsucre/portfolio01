@@ -1,11 +1,21 @@
 let projs;
 const myMediaQuery = window.matchMedia('(min-width: 768px)');
 const myMediaQuery2 = window.matchMedia('(min-width: 1100px)');
+const menu = document.getElementById('page-header');
+const menuOffset = menu.offsetHeight;
 
 async function fetchJSON() {
   const response = await fetch('projs.json');
   const json = await response.json();
   return json;
+}
+
+function menuSticky() {
+  if (window.scrollY > menuOffset - 1) {
+    menu.classList.add('sticky');
+  } else if (window.scrollY < menuOffset - 1) {
+    menu.classList.remove('sticky');
+  }
 }
 
 function mostrarMenu() {
@@ -264,6 +274,8 @@ myMediaQuery.addEventListener('change', checkMediaIsBelow768);
 document.getElementById('hamburger-button').addEventListener('click', mostrarMenu);
 document.getElementById('close-btn').addEventListener('click', ocultarMenu);
 document.addEventListener('DOMContentLoaded', fillProjectSection);
+
+window.onscroll = menuSticky;
 
 const form = document.getElementById('contact');
 const email = document.getElementById('email');
