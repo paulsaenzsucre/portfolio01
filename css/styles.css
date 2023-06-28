@@ -163,7 +163,7 @@ footer {
 }
 
 #page-header {
-  margin: 10px 0 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -177,6 +177,7 @@ footer {
 
 #logo {
   text-decoration: none;
+  margin: 0.6rem 0;
 }
 
 #logoPlaceHolder {
@@ -642,8 +643,17 @@ footer {
   }
 
   #page-header {
-    margin: 10px 0 0;
+    margin: 0 auto;
     text-align: center;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: white;
   }
 
   .headline {
@@ -850,8 +860,17 @@ footer {
   }
 
   #page-header {
-    margin: 10px 0 0;
+    margin: 0auto;
     text-align: center;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: white;
   }
 
   .headline {
