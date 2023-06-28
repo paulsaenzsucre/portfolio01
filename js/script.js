@@ -11,9 +11,9 @@ async function fetchJSON() {
 }
 
 function menuSticky() {
-  if (window.scrollY > menuOffset-1) {
+  if (window.scrollY > menuOffset- 1) {
     menu.classList.add('sticky');
-  } else if (window.scrollY < menuOffset-11) {
+  } else if (window.scrollY < menuOffset - 1) {
     menu.classList.remove('sticky');
   }
 }
