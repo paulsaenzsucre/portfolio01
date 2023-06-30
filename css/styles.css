@@ -725,7 +725,7 @@ footer {
   .outline-btn:focus {
     background-color: var(--button-pressed-color);
   }
-  
+
   .outline-btn:hover {
     background-color: var(--button-hover-color);
     box-shadow: var(--button-hover-shadow);
