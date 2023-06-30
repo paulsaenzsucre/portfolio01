@@ -30,6 +30,8 @@ function mostrarMenu() {
     document.getElementsByClassName('menu-item')[x].classList.add('menu-item-mobile-menu');
   }
   document.getElementById('header-separator').style.display = 'block';
+  document.addEventListener('scroll', noScrollMenu);
+  document.getElementById('page-header-mobile-menu').scrollIntoView();
 }
 
 function ocultarMenu() {
@@ -72,8 +74,15 @@ function noScroll(evt) {
   document.getElementById('popup-back').scrollIntoView();
 }
 
+function noScrollMenu(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  document.getElementById('page-header-mobile-menu').scrollIntoView();
+}
+
 function toggleCard(evt) {
   let element; let article;
+  let topmenu = document.getElementById('page-header');
   const num = evt.currentTarget.myParam;
   const card = document.getElementById(`proj-${num}`);
   if (card.myToggle) {
@@ -109,10 +118,10 @@ function toggleCard(evt) {
     element.classList.add('hide');
 
     [element] = card.getElementsByClassName('btn-container');
-    const [btn1, btn2, btn3] = element.getElementsByClassName('btn-grow');
-    btn1.classList.remove('hide');
-    btn2.classList.add('hide');
-    btn3.classList.add('hide');
+    const [btn1, btn2] = element.getElementsByClassName('btn-grow');
+    topmenu.classList.add('sticky');
+    btn1.classList.add('hide');
+    btn2.classList.remove('hide');
     document.removeEventListener('scroll', noScroll);
   } else {
     article = document.getElementById('my-recent-works-container');
@@ -147,10 +156,10 @@ function toggleCard(evt) {
     element.classList.remove('hide');
 
     [element] = card.getElementsByClassName('btn-container');
-    const [btn1, btn2, btn3] = element.getElementsByClassName('btn-grow');
-    btn1.classList.add('hide');
-    btn2.classList.remove('hide');
-    btn3.classList.remove('hide');
+    const [btn1, btn2] = element.getElementsByClassName('btn-grow');
+    topmenu.classList.remove('sticky');
+    btn1.classList.remove('hide');
+    btn2.classList.add('hide');
     document.addEventListener('scroll', noScroll);
     article.scrollIntoView();
   }
@@ -197,11 +206,22 @@ function showCards(obj) {
   divBtn.setAttribute('class', 'flex-container btn-container');
 
   let ti = document.createElement('i');
-  ti.setAttribute('class', 'bx bx-box bx-flashing');
+  ti.setAttribute('class', 'bx bx-sm bx-left-arrow-circle bx-fade-left');
   let btn = document.createElement('button');
+  btn.setAttribute('class', 'button btn-grow hide');
+  btn.setAttribute('type', 'button');
+  btn.appendChild(document.createTextNode('Back'));
+  btn.appendChild(ti);
+  btn.myParam = obj.id;
+  btn.addEventListener('click', toggleCard);
+  divBtn.appendChild(btn);
+
+  ti = document.createElement('i');
+  ti.setAttribute('class', 'bx bx-box bx-flashing');
+  btn = document.createElement('button');
   btn.setAttribute('class', 'button btn-grow');
   btn.setAttribute('type', 'button');
-  btn.appendChild(document.createTextNode('See Project '));
+  btn.appendChild(document.createTextNode('More'));
   btn.appendChild(ti);
   btn.myParam = obj.id;
   btn.addEventListener('click', toggleCard);
@@ -210,9 +230,9 @@ function showCards(obj) {
   ti = document.createElement('i');
   ti.setAttribute('class', 'bx bx-sm bx-up-arrow-circle bx-fade-up');
   btn = document.createElement('button');
-  btn.setAttribute('class', 'button btn-grow hide');
+  btn.setAttribute('class', 'button btn-grow');
   btn.setAttribute('type', 'button');
-  btn.appendChild(document.createTextNode('See Live '));
+  btn.appendChild(document.createTextNode('Live '));
   btn.appendChild(ti);
   btn.myParam = obj.id;
   btn.addEventListener('click', openLive);
@@ -221,9 +241,9 @@ function showCards(obj) {
   ti = document.createElement('i');
   ti.setAttribute('class', 'bx bx-sm bxl-github bx-flashing');
   btn = document.createElement('button');
-  btn.setAttribute('class', 'button btn-grow hide');
+  btn.setAttribute('class', 'button btn-grow');
   btn.setAttribute('type', 'button');
-  btn.appendChild(document.createTextNode('See Source '));
+  btn.appendChild(document.createTextNode('Source '));
   btn.appendChild(ti);
   btn.myParam = obj.id;
   btn.addEventListener('click', openSource);
