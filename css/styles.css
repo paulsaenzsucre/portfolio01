@@ -369,7 +369,8 @@ footer {
   background: white;
   border-radius: 1rem;
   padding: 1rem;
-  width: 100%;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
   align-items: stretch;
 }
 
@@ -381,7 +382,7 @@ footer {
   padding: 0;
   justify-self: stretch;
   align-items: stretch;
-  height: 29.6rem;
+  min-height: 29.6rem;
   transition: 0.2s;
   overflow: hidden;
 }
@@ -391,8 +392,9 @@ footer {
 }
 
 .card-img {
-  width: 100%;
-  max-height: 49%;
+  max-height: 60vh;
+  width: auto;
+  object-fit: contain;
 }
 
 .info-container {
@@ -468,7 +470,7 @@ footer {
   justify-content: center;
   gap: 1rem;
   font-weight: 400;
-  font-size: 1.063rem;
+  font-size: 3.3vw;
   letter-spacing: 0.03em;
 }
 
@@ -652,7 +654,7 @@ footer {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 30;
     background: white;
   }
 
@@ -669,6 +671,10 @@ footer {
 
   .supportingLine {
     max-width: 920px;
+  }
+
+  .btn-grow {
+    font-size: 1.5vw;
   }
 
   #top-menu {
@@ -704,6 +710,27 @@ footer {
     gap: 38px;
     height: 100vh;
     background-image: none;
+  }
+
+  .outline-btn {
+    border: var(--border-green-color) 0.126rem solid;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .outline-btn:enabled {
+    background-color: var(--button-enabled-color);
+  }
+
+  .outline-btn:focus {
+    background-color: var(--button-pressed-color);
+  }
+
+  .outline-btn:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: var(--button-hover-shadow);
+    color: white;
+    border: none;
   }
 
   /* My Recent Works Desktop Styles */
@@ -960,6 +987,10 @@ footer {
     max-width: 57.5rem;
     max-height: 67.688rem;
     align-items: stretch;
+  }
+
+  .btn-grow {
+    font-size: 1vw;
   }
 
   /* About Me Desktop Styles */
