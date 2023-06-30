@@ -706,6 +706,27 @@ footer {
     background-image: none;
   }
 
+  .outline-btn {
+    border: var(--border-green-color) 0.126rem solid;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .outline-btn:enabled {
+    background-color: var(--button-enabled-color);
+  }
+  
+  .outline-btn:focus {
+    background-color: var(--button-pressed-color);
+  }
+  
+  .outline-btn:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: var(--button-hover-shadow);
+    color: white;
+    border: none;
+  }
+
   /* My Recent Works Desktop Styles */
 
   #my-recent-works-container {
