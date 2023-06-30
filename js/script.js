@@ -18,6 +18,12 @@ function menuSticky() {
   }
 }
 
+function noScrollMenu(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  document.getElementById('page-header-mobile-menu').scrollIntoView();
+}
+
 function mostrarMenu() {
   document.getElementById('page-header').id = 'page-header-mobile-menu';
   document.getElementById('logo').id = 'logo-mobile-menu';
@@ -74,15 +80,9 @@ function noScroll(evt) {
   document.getElementById('popup-back').scrollIntoView();
 }
 
-function noScrollMenu(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
-  document.getElementById('page-header-mobile-menu').scrollIntoView();
-}
-
 function toggleCard(evt) {
   let element; let article;
-  let topmenu = document.getElementById('page-header');
+  const topmenu = document.getElementById('page-header');
   const num = evt.currentTarget.myParam;
   const card = document.getElementById(`proj-${num}`);
   if (card.myToggle) {

@@ -721,7 +721,7 @@ footer {
   .outline-btn:enabled {
     background-color: var(--button-enabled-color);
   }
-  
+
   .outline-btn:focus {
     background-color: var(--button-pressed-color);
   }
